@@ -1,0 +1,8 @@
+# Dependencias del sistema
+# Python 3.12.0
+
+# Conector PostgreSQL
+psycopg2-binary==2.9.11
+
+# Cliente MQTT
+paho-mqtt==2.1.0
