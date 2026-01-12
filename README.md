@@ -29,3 +29,4 @@ proceso para realizar una comprobación del funcionamiento del sistema:
   pip install -r requirements.txt 
 
 Autor: Carlos Alberto Rivera Amador
+

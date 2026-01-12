@@ -19,3 +19,4 @@ MQTT_CONFIG = {
     'topic': 'application/+/device/+/event/up'
 }
 
+

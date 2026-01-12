@@ -34,7 +34,7 @@ class ListenerLoRaWAN:
         if username and password:
             self.client.username_pw_set(username, password)
     
-    def _on_connect(self, client, userdata, flags, rc):
+    def _on_connect(self, client, userdata, flags, rc, properties=None):
         if rc == 0:
             logger.info("Conectado al broker MQTT")
             topic = self.mqtt_config['topic']
@@ -43,7 +43,7 @@ class ListenerLoRaWAN:
         else:
             logger.error(f"Error de conexion (codigo: {rc})")
     
-    def _on_disconnect(self, client, userdata, rc):
+    def _on_disconnect(self, client, userdata, flags, rc, properties=None):
         if rc != 0:
             logger.warning(f"Desconexion inesperada (rc={rc})")
     
